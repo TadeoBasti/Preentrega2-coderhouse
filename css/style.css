@@ -635,7 +635,6 @@ footer{
 }
 
 .devo-body{
-    border: 1px solid black;
     margin-top: 3vh;
     display: flex;
     flex-direction: column;
