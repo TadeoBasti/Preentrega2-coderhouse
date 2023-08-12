@@ -1,0 +1,21 @@
+@mixin button {
+    font-size: 10pt;
+    font-weight: 600;
+    padding: 1vh;
+    background-color: pink;
+    border: 1px solid pink;
+}
+
+@mixin cards($ancho, $alto) {
+    border: 1px solid black;
+    text-align: center;
+    width: $ancho;
+    height: $alto;
+    margin-top: 2vh;
+}
+
+@mixin mediaquery($ancho) {
+    @media screen and (max-width: #{$ancho}) {
+        @content;
+    }
+}

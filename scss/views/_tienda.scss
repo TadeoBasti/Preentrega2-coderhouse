@@ -1,0 +1,101 @@
+h1 {
+    margin: 0px 0px 5vh 2vh;
+}
+.shop-container {
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 0px 0px 0px 40px;
+    display: grid;
+    grid-template-columns: 33% 67%;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-template-areas: "left-shop right-shop";
+    @include mediaquery(900px) {
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr;
+        grid-template-areas:
+            "left-shop"
+            "right-shop";
+    }
+}
+.left-shop {
+    grid-area: left-shop;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 50%;
+    align-content: center;
+    h2 {
+        font-size: 14pt;
+        color: grey;
+        display: inline;
+        border-bottom: 1px solid grey;
+        padding: 0px 0px 0vh 0px;
+        @include mediaquery(900px) {
+            display: none;
+        }
+    }
+    h3 {
+        margin: 2vh 0px 0px 0px;
+        @include mediaquery(900px) {
+            display: none;
+        }
+    }
+}
+
+.mobile-content {
+    display: none;
+    @include mediaquery(900px) {
+        display: flex;
+        justify-content: space-between;
+        font-size: 10pt;
+    }
+}
+
+.shop-list {
+    margin: 2vh 0px 1vh 0px;
+    padding: 0px;
+    list-style: none;
+    @include mediaquery(900px) {
+        display: none;
+    }
+}
+.value {
+    display: flex;
+    @include mediaquery(900px) {
+        display: none;
+    }
+}
+.left-value {
+    display: flex;
+    flex-direction: column;
+    margin-right: 5px;
+}
+.right-value {
+    display: flex;
+    flex-direction: column;
+}
+
+.number-box {
+    height: 40px;
+    width: 100px;
+}
+.submit {
+    display: inline;
+    height: 100%;
+    width: 100%;
+}
+
+.right-shop {
+    grid-area: right-shop;
+}
+.right-shop-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1vh;
+}
+.shop-cards {
+    justify-self: center;
+    align-self: center;
+    @include cards(253px, 400px);
+}

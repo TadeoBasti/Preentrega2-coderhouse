@@ -1,0 +1,251 @@
+.fondo {
+    width: 100%;
+    height: 100%;
+    background-color: red;
+    background-size: auto;
+    font-size: 32pt;
+    color: white;
+    text-align: center;
+}
+
+.product-container {
+    margin: 3vh 1vh 0vh 1vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:
+        "buzos remeras shorts"
+        "joggers jeans accesorios";
+    gap: 1vh;
+    @include mediaquery(1400px) {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas:
+            "buzos remeras"
+            "shorts joggers"
+            "jeans accesorios";
+    }
+    @include mediaquery(900px) {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas:
+            "buzos remeras"
+            "shorts joggers"
+            "jeans accesorios";
+    }
+    @include mediaquery(600px) {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-areas:
+            "buzos"
+            "remeras"
+            "shorts"
+            "joggers"
+            "jeans"
+            "accesorios";
+    }
+}
+
+.buzos-hoodies {
+    grid-area: buzos;
+    display: flex;
+    justify-content: space-between;
+    @include mediaquery(900px) {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.Remeras {
+    grid-area: remeras;
+    display: flex;
+    justify-content: space-between;
+    @include mediaquery(900px) {
+        display: flex;
+        flex-direction: column;
+    }
+}
+.Shorts {
+    grid-area: shorts;
+    display: flex;
+    justify-content: space-between;
+    @include mediaquery(900px) {
+        display: flex;
+        flex-direction: column;
+    }
+}
+.Joggers {
+    grid-area: joggers;
+    display: flex;
+    justify-content: space-between;
+    @include mediaquery(900px) {
+        display: flex;
+        flex-direction: column;
+    }
+}
+.Jeans {
+    grid-area: jeans;
+    display: flex;
+    justify-content: space-between;
+    @include mediaquery(900px) {
+        display: flex;
+        flex-direction: column;
+    }
+}
+.Accesorios {
+    grid-area: accesorios;
+    display: flex;
+    justify-content: space-between;
+    @include mediaquery(900px) {
+        display: flex;
+        flex-direction: column;
+    }
+}
+.hoodies-left,
+.remeras-left,
+.shorts-left,
+.joggers-left,
+.jeans-left,
+.accesorios-left {
+    @include mediaquery(900px) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+.product-right {
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+// TITULO CUERPO Y PIE DE MIS DESTACADOS
+
+.right-title {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-right: 1vh;
+    @include mediaquery(900px) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 1vh;
+    }
+    h3 {
+        font-size: 15pt;
+        font-weight: 400;
+        @include mediaquery(900px) {
+            font-size: 13pt;
+        }
+    }
+}
+
+.right-body {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-right: 1vh;
+    @include mediaquery(900px) {
+        align-items: center;
+        justify-content: center;
+        margin-right: 1vh;
+    }
+    h2 {
+        font-size: 15pt;
+        font-weight: 750;
+        @include mediaquery(1400px) {
+            font-size: 15pt;
+        }
+        @include mediaquery(900px) {
+            font-size: 15pt;
+            font-weight: 600;
+        }
+    }
+}
+
+.right-foot {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-right: 1vh;
+    @include mediaquery(900px) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+.product-button {
+    @include button;
+}
+
+article {
+    .news-title {
+        h3 {
+            margin-top: 2vh;
+            font-weight: 600;
+            display: flex;
+            place-content: center;
+        }
+    }
+}
+
+.news-cards-container {
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-auto-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0% 0%;
+    grid-template-areas: "uno dos tres cuatro";
+
+    @include mediaquery(1400px) {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:
+            "uno dos"
+            "tres cuatro";
+    }
+    @include mediaquery(600px) {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+            "uno"
+            "dos"
+            "tres"
+            "cuatro";
+    }
+}
+.news-cards {
+    @include cards(253px, 400px);
+    margin-top: 2vh;
+    h3 {
+        font-weight: 600;
+    }
+}
+
+.primero {
+    justify-self: center;
+    align-self: center;
+    grid-area: uno;
+}
+.segundo {
+    justify-self: center;
+    align-self: center;
+    grid-area: dos;
+}
+
+.tercero {
+    justify-self: center;
+    align-self: center;
+    grid-area: tres;
+}
+.cuarto {
+    justify-self: center;
+    align-self: center;
+    grid-area: cuatro;
+}
+
+.button-news {
+    display: grid;
+    place-content: center;
+    margin: 2vh;
+}

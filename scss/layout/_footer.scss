@@ -1,0 +1,88 @@
+footer {
+    align-self: flex-end;
+    line-height: 3;
+    text-align: center;
+    width: 100%;
+    h3 {
+        @include mediaquery(600px) {
+            font-size: 15pt;
+        }
+    }
+    p {
+        @include mediaquery(600px) {
+            font-size: 10pt;
+        }
+    }
+}
+.footer-content {
+    box-shadow: 0px -1px 11px 0px rgba(0, 0, 0, 0.56);
+    -webkit-box-shadow: 0px -1px 11px 0px rgba(0, 0, 0, 0.56);
+    -moz-box-shadow: 0px -1px 11px 0px rgba(0, 0, 0, 0.56);
+    background-color: grey;
+    width: 100%;
+    height: 100%;
+}
+
+.contact {
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-auto-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0% 0%;
+    grid-template-areas: "phone email location payments-methods";
+    @include mediaquery(900px) {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:
+            "phone email"
+            "location payments-methods";
+    }
+    @include mediaquery(600px) {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+            "phone"
+            "email"
+            "location"
+            "payments-methods";
+    }
+}
+
+.phone {
+    justify-self: center;
+    align-self: start;
+    grid-area: phone;
+}
+
+.email {
+    justify-self: center;
+    align-self: start;
+    grid-area: email;
+}
+
+.location {
+    justify-self: center;
+    align-self: start;
+    grid-area: location;
+}
+
+.payments-methods {
+    justify-self: center;
+    align-self: start;
+    grid-area: payments-methods;
+    img {
+        display: inline-flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 50px;
+        width: 75px;
+    }
+}
+
+.socials a {
+    text-decoration: none;
+    display: inline-flex;
+    text-align: center;
+    color: white;
+}

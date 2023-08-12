@@ -112,37 +112,7 @@ nav{
 }
 
 /* PARTE DERECHA DE MIS PRODUCTOS */
-.hoodies-right{
-    margin: 0px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-.remeras-right{
-    margin: 0px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-.shorts-right{
-    margin: 0px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-.joggers-right{
-    margin: 0px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-.jeans-right{
-    margin: 0px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-.accesorios-right{
+.product-right{
     margin: 0px;
     display: flex;
     flex-direction: column;
@@ -232,6 +202,7 @@ nav{
 .news-cards h3{
     font-weight: 600;
 }
+
 .button-news{
     display: grid;
     place-content: center;
@@ -344,6 +315,66 @@ nav{
     background-color: pink;
     padding: 6px 12px 6px 12px;
 }
+/*! TIENDA.HTML */
+.shop-container{
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 0px 0px 0px 40px;
+    display: grid; 
+    grid-template-columns: 33% 67%; 
+    grid-template-rows: 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas:
+    "left-shop right-shop"; 
+}
+.left-shop{
+    grid-area: left-shop;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    height: 100%;
+    width: 50%;
+    align-content: center;
+}
+.left-shop h2{
+    font-size: 14pt;
+    color: grey;
+    display: inline;
+    border-bottom: 1px solid grey;
+    padding: 0px 0px 0vh 0px;
+}
+.left-shop h3{
+    margin: 2vh 0px 0px 0px;
+}
+.shop-list{
+    margin: 2vh 0px 1vh 0px;
+    padding: 0px;
+    list-style: none;
+}
+.shop-list input{
+    margin-right: 10px;
+}
+.value{
+    display: flex;
+}
+.left-value{
+    display: flex;
+    flex-direction:column;
+    margin-right: 5px;
+}
+.right-value{
+    display: flex;
+    flex-direction:column;
+}
+
+.number-box{
+    height: 40px;
+    width: 100px;
+}
+.submit{
+    height: 40px;
+    width: 30px;
+}
 
 /*! PRODUCTOS.HTML */
 
@@ -367,6 +398,7 @@ nav{
     align-self: center; 
     grid-area: product-left;
 }
+
 .product-buy-right{
     justify-self: start; 
     align-self: center; 
@@ -388,6 +420,7 @@ nav{
 .accordion-body{
     width: 50vh;
 }
+
 .product-buy-button{
     display: inline-flex;
     font-size: 10pt;
@@ -510,7 +543,7 @@ footer{
 
 /* MEDIA QUERIS 1100*/
 @media only screen and (max-width: 1100px){
-    
+    /* PRODUCTO */
     .product h2{
         display: flex;
         justify-content: center;
@@ -568,6 +601,7 @@ footer{
     .header-left{
         display: none;
     }
+
     .header-right {
         grid-template-columns: 1fr 1fr 1fr; 
         grid-template-rows: 1fr; 
