@@ -80,6 +80,8 @@
     @include mediaquery(900px) {
         display: flex;
         flex-direction: column;
+        animation: none;
+        -webkit-animation: none;
     }
 }
 
@@ -100,6 +102,8 @@
     @include mediaquery(900px) {
         display: flex;
         flex-direction: column;
+        animation: none;
+        -webkit-animation: none;
     }
 }
 .Shorts {
@@ -119,6 +123,8 @@
     @include mediaquery(900px) {
         display: flex;
         flex-direction: column;
+        animation: none;
+        -webkit-animation: none;
     }
 }
 .Joggers {
@@ -138,6 +144,8 @@
     @include mediaquery(900px) {
         display: flex;
         flex-direction: column;
+        animation: none;
+        -webkit-animation: none;
     }
 }
 .Jeans {
@@ -157,6 +165,8 @@
     @include mediaquery(900px) {
         display: flex;
         flex-direction: column;
+        animation: none;
+        -webkit-animation: none;
     }
 }
 .Accesorios {
@@ -176,6 +186,8 @@
     @include mediaquery(900px) {
         display: flex;
         flex-direction: column;
+        animation: none;
+        -webkit-animation: none;
     }
 }
 .hoodies-left,
