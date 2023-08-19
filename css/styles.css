@@ -193,10 +193,11 @@ footer {
     transform: translateX(0); } }
 
 .fondo {
-  height: 30vh;
-  background-image: url(/img/fondo.png);
-  background-size: cover;
-  background-position: center; }
+  max-width: 100%;
+  text-align: center; }
+  .fondo img {
+    max-width: 100%;
+    height: auto; }
 
 .product-container {
   margin: 3vh 1vh 0vh 1vh;
@@ -234,7 +235,9 @@ footer {
   @media screen and (max-width: 900px) {
     .buzos-hoodies {
       display: flex;
-      flex-direction: column; } }
+      flex-direction: column;
+      animation: none;
+      -webkit-animation: none; } }
 
 .Remeras {
   grid-area: remeras;
@@ -249,7 +252,9 @@ footer {
   @media screen and (max-width: 900px) {
     .Remeras {
       display: flex;
-      flex-direction: column; } }
+      flex-direction: column;
+      animation: none;
+      -webkit-animation: none; } }
 
 .Shorts {
   grid-area: shorts;
@@ -264,7 +269,9 @@ footer {
   @media screen and (max-width: 900px) {
     .Shorts {
       display: flex;
-      flex-direction: column; } }
+      flex-direction: column;
+      animation: none;
+      -webkit-animation: none; } }
 
 .Joggers {
   grid-area: joggers;
@@ -279,7 +286,9 @@ footer {
   @media screen and (max-width: 900px) {
     .Joggers {
       display: flex;
-      flex-direction: column; } }
+      flex-direction: column;
+      animation: none;
+      -webkit-animation: none; } }
 
 .Jeans {
   grid-area: jeans;
@@ -294,7 +303,9 @@ footer {
   @media screen and (max-width: 900px) {
     .Jeans {
       display: flex;
-      flex-direction: column; } }
+      flex-direction: column;
+      animation: none;
+      -webkit-animation: none; } }
 
 .Accesorios {
   grid-area: accesorios;
@@ -309,7 +320,9 @@ footer {
   @media screen and (max-width: 900px) {
     .Accesorios {
       display: flex;
-      flex-direction: column; } }
+      flex-direction: column;
+      animation: none;
+      -webkit-animation: none; } }
 
 .hoodies-left img,
 .remeras-left img,
