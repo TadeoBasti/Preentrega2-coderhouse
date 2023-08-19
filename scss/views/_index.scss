@@ -1,11 +1,28 @@
+@keyframes slide-derecha {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(100px);
+    }
+}
+
+@keyframes slide-izquierda {
+    0% {
+        transform: translateX(100px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
 .fondo {
-    width: 100%;
-    height: 100%;
-    background-color: red;
-    background-size: auto;
-    font-size: 32pt;
-    color: white;
-    text-align: center;
+    height: 30vh;
+    background-image: url(/img/fondo.png);
+    background-size: cover;
+    background-position: center;
 }
 
 .product-container {
@@ -50,6 +67,16 @@
     grid-area: buzos;
     display: flex;
     justify-content: space-between;
+    &:hover {
+        img {
+            animation: slide-derecha 1s ease 0s 1 normal forwards;
+            -webkit-animation: slide-derecha 1s ease 0s 1 normal forwards;
+        }
+    }
+    img {
+        animation: slide-izquierda 1s ease 0s 1 normal forwards;
+        -webkit-animation: slide-izquierda 1s ease 0s 1 normal forwards;
+    }
     @include mediaquery(900px) {
         display: flex;
         flex-direction: column;
@@ -60,6 +87,16 @@
     grid-area: remeras;
     display: flex;
     justify-content: space-between;
+    &:hover {
+        img {
+            animation: slide-derecha 1s ease 0s 1 normal forwards;
+            -webkit-animation: slide-derecha 1s ease 0s 1 normal forwards;
+        }
+    }
+    img {
+        animation: slide-izquierda 1s ease 0s 1 normal forwards;
+        -webkit-animation: slide-izquierda 1s ease 0s 1 normal forwards;
+    }
     @include mediaquery(900px) {
         display: flex;
         flex-direction: column;
@@ -69,6 +106,16 @@
     grid-area: shorts;
     display: flex;
     justify-content: space-between;
+    &:hover {
+        img {
+            animation: slide-derecha 1s ease 0s 1 normal forwards;
+            -webkit-animation: slide-derecha 1s ease 0s 1 normal forwards;
+        }
+    }
+    img {
+        animation: slide-izquierda 1s ease 0s 1 normal forwards;
+        -webkit-animation: slide-izquierda 1s ease 0s 1 normal forwards;
+    }
     @include mediaquery(900px) {
         display: flex;
         flex-direction: column;
@@ -78,6 +125,16 @@
     grid-area: joggers;
     display: flex;
     justify-content: space-between;
+    &:hover {
+        img {
+            animation: slide-derecha 1s ease 0s 1 normal forwards;
+            -webkit-animation: slide-derecha 1s ease 0s 1 normal forwards;
+        }
+    }
+    img {
+        animation: slide-izquierda 1s ease 0s 1 normal forwards;
+        -webkit-animation: slide-izquierda 1s ease 0s 1 normal forwards;
+    }
     @include mediaquery(900px) {
         display: flex;
         flex-direction: column;
@@ -87,6 +144,16 @@
     grid-area: jeans;
     display: flex;
     justify-content: space-between;
+    &:hover {
+        img {
+            animation: slide-derecha 1s ease 0s 1 normal forwards;
+            -webkit-animation: slide-derecha 1s ease 0s 1 normal forwards;
+        }
+    }
+    img {
+        animation: slide-izquierda 1s ease 0s 1 normal forwards;
+        -webkit-animation: slide-izquierda 1s ease 0s 1 normal forwards;
+    }
     @include mediaquery(900px) {
         display: flex;
         flex-direction: column;
@@ -96,6 +163,16 @@
     grid-area: accesorios;
     display: flex;
     justify-content: space-between;
+    &:hover {
+        img {
+            animation: slide-derecha 1s ease 0s 1 normal forwards;
+            -webkit-animation: slide-derecha 1s ease 0s 1 normal forwards;
+        }
+    }
+    img {
+        animation: slide-izquierda 1s ease 0s 1 normal forwards;
+        -webkit-animation: slide-izquierda 1s ease 0s 1 normal forwards;
+    }
     @include mediaquery(900px) {
         display: flex;
         flex-direction: column;
@@ -107,6 +184,11 @@
 .joggers-left,
 .jeans-left,
 .accesorios-left {
+    img {
+        width: 300px;
+        height: 250px;
+        text-align: center;
+    }
     @include mediaquery(900px) {
         display: flex;
         align-items: center;
@@ -215,6 +297,10 @@ article {
     }
 }
 .news-cards {
+    img {
+        width: 250px;
+        height: 250px;
+    }
     @include cards(253px, 400px);
     margin-top: 2vh;
     h3 {

@@ -2,16 +2,39 @@
     font-size: 10pt;
     font-weight: 600;
     padding: 1vh;
-    background-color: pink;
-    border: 1px solid pink;
+    background-color: black;
+    border: 1px solid black;
+    color: white;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+    &:hover {
+        background-color: rgb(68, 68, 68);
+        border: 1px solid rgb(68, 68, 68);
+    }
 }
 
 @mixin cards($ancho, $alto) {
-    border: 1px solid black;
     text-align: center;
     width: $ancho;
     height: $alto;
     margin-top: 2vh;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+    text-transform: uppercase;
+    &:hover {
+        transform: translateY(-10px);
+        -webkit-transform: translateY(-10px);
+        -moz-transform: translateY(-10px);
+        -ms-transform: translateY(-10px);
+        -o-transform: translateY(-10px);
+        box-shadow: 0px 4px 17px -6px rgba(0, 0, 0, 0.75);
+    }
 }
 
 @mixin mediaquery($ancho) {

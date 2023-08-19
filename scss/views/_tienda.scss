@@ -98,4 +98,8 @@ h1 {
     justify-self: center;
     align-self: center;
     @include cards(253px, 400px);
+    img {
+        width: 250px;
+        height: 250px;
+    }
 }
