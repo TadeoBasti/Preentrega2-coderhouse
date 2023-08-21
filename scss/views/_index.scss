@@ -71,19 +71,21 @@
     justify-content: space-between;
     &:hover {
         img {
-            animation: slide-derecha 1s ease 0s 1 normal forwards;
-            -webkit-animation: slide-derecha 1s ease 0s 1 normal forwards;
+            @include minquery(900px) {
+                animation: slide-derecha 1s ease 0s 1 normal forwards;
+                -webkit-animation: slide-derecha 1s ease 0s 1 normal forwards;
+            }
         }
     }
     img {
-        animation: slide-izquierda 1s ease 0s 1 normal forwards;
-        -webkit-animation: slide-izquierda 1s ease 0s 1 normal forwards;
+        @include minquery(900px) {
+            animation: slide-izquierda 1s ease 0s 1 normal forwards;
+            -webkit-animation: slide-izquierda 1s ease 0s 1 normal forwards;
+        }
     }
     @include mediaquery(900px) {
         display: flex;
         flex-direction: column;
-        animation: none;
-        -webkit-animation: none;
     }
 }
 
@@ -93,19 +95,21 @@
     justify-content: space-between;
     &:hover {
         img {
-            animation: slide-derecha 1s ease 0s 1 normal forwards;
-            -webkit-animation: slide-derecha 1s ease 0s 1 normal forwards;
+            @include minquery(900px) {
+                animation: slide-derecha 1s ease 0s 1 normal forwards;
+                -webkit-animation: slide-derecha 1s ease 0s 1 normal forwards;
+            }
         }
     }
     img {
-        animation: slide-izquierda 1s ease 0s 1 normal forwards;
-        -webkit-animation: slide-izquierda 1s ease 0s 1 normal forwards;
+        @include minquery(900px) {
+            animation: slide-izquierda 1s ease 0s 1 normal forwards;
+            -webkit-animation: slide-izquierda 1s ease 0s 1 normal forwards;
+        }
     }
     @include mediaquery(900px) {
         display: flex;
         flex-direction: column;
-        animation: none;
-        -webkit-animation: none;
     }
 }
 .Shorts {
@@ -114,19 +118,21 @@
     justify-content: space-between;
     &:hover {
         img {
-            animation: slide-derecha 1s ease 0s 1 normal forwards;
-            -webkit-animation: slide-derecha 1s ease 0s 1 normal forwards;
+            @include minquery(900px) {
+                animation: slide-derecha 1s ease 0s 1 normal forwards;
+                -webkit-animation: slide-derecha 1s ease 0s 1 normal forwards;
+            }
         }
     }
     img {
-        animation: slide-izquierda 1s ease 0s 1 normal forwards;
-        -webkit-animation: slide-izquierda 1s ease 0s 1 normal forwards;
+        @include minquery(900px) {
+            animation: slide-izquierda 1s ease 0s 1 normal forwards;
+            -webkit-animation: slide-izquierda 1s ease 0s 1 normal forwards;
+        }
     }
     @include mediaquery(900px) {
         display: flex;
         flex-direction: column;
-        animation: none;
-        -webkit-animation: none;
     }
 }
 .Joggers {
@@ -135,19 +141,21 @@
     justify-content: space-between;
     &:hover {
         img {
-            animation: slide-derecha 1s ease 0s 1 normal forwards;
-            -webkit-animation: slide-derecha 1s ease 0s 1 normal forwards;
+            @include minquery(900px) {
+                animation: slide-derecha 1s ease 0s 1 normal forwards;
+                -webkit-animation: slide-derecha 1s ease 0s 1 normal forwards;
+            }
         }
     }
     img {
-        animation: slide-izquierda 1s ease 0s 1 normal forwards;
-        -webkit-animation: slide-izquierda 1s ease 0s 1 normal forwards;
+        @include minquery(900px) {
+            animation: slide-izquierda 1s ease 0s 1 normal forwards;
+            -webkit-animation: slide-izquierda 1s ease 0s 1 normal forwards;
+        }
     }
     @include mediaquery(900px) {
         display: flex;
         flex-direction: column;
-        animation: none;
-        -webkit-animation: none;
     }
 }
 .Jeans {
@@ -156,19 +164,21 @@
     justify-content: space-between;
     &:hover {
         img {
-            animation: slide-derecha 1s ease 0s 1 normal forwards;
-            -webkit-animation: slide-derecha 1s ease 0s 1 normal forwards;
+            @include minquery(900px) {
+                animation: slide-derecha 1s ease 0s 1 normal forwards;
+                -webkit-animation: slide-derecha 1s ease 0s 1 normal forwards;
+            }
         }
     }
     img {
-        animation: slide-izquierda 1s ease 0s 1 normal forwards;
-        -webkit-animation: slide-izquierda 1s ease 0s 1 normal forwards;
+        @include minquery(900px) {
+            animation: slide-izquierda 1s ease 0s 1 normal forwards;
+            -webkit-animation: slide-izquierda 1s ease 0s 1 normal forwards;
+        }
     }
     @include mediaquery(900px) {
         display: flex;
         flex-direction: column;
-        animation: none;
-        -webkit-animation: none;
     }
 }
 .Accesorios {
@@ -177,19 +187,21 @@
     justify-content: space-between;
     &:hover {
         img {
-            animation: slide-derecha 1s ease 0s 1 normal forwards;
-            -webkit-animation: slide-derecha 1s ease 0s 1 normal forwards;
+            @include minquery(900px) {
+                animation: slide-derecha 1s ease 0s 1 normal forwards;
+                -webkit-animation: slide-derecha 1s ease 0s 1 normal forwards;
+            }
         }
     }
     img {
-        animation: slide-izquierda 1s ease 0s 1 normal forwards;
-        -webkit-animation: slide-izquierda 1s ease 0s 1 normal forwards;
+        @include minquery(900px) {
+            animation: slide-izquierda 1s ease 0s 1 normal forwards;
+            -webkit-animation: slide-izquierda 1s ease 0s 1 normal forwards;
+        }
     }
     @include mediaquery(900px) {
         display: flex;
         flex-direction: column;
-        animation: none;
-        -webkit-animation: none;
     }
 }
 .hoodies-left,

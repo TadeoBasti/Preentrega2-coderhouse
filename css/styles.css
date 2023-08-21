@@ -226,103 +226,103 @@ footer {
   grid-area: buzos;
   display: flex;
   justify-content: space-between; }
-  .buzos-hoodies:hover img {
-    animation: slide-derecha 1s ease 0s 1 normal forwards;
-    -webkit-animation: slide-derecha 1s ease 0s 1 normal forwards; }
-  .buzos-hoodies img {
-    animation: slide-izquierda 1s ease 0s 1 normal forwards;
-    -webkit-animation: slide-izquierda 1s ease 0s 1 normal forwards; }
+  @media screen and (min-width: 900px) {
+    .buzos-hoodies:hover img {
+      animation: slide-derecha 1s ease 0s 1 normal forwards;
+      -webkit-animation: slide-derecha 1s ease 0s 1 normal forwards; } }
+  @media screen and (min-width: 900px) {
+    .buzos-hoodies img {
+      animation: slide-izquierda 1s ease 0s 1 normal forwards;
+      -webkit-animation: slide-izquierda 1s ease 0s 1 normal forwards; } }
   @media screen and (max-width: 900px) {
     .buzos-hoodies {
       display: flex;
-      flex-direction: column;
-      animation: none;
-      -webkit-animation: none; } }
+      flex-direction: column; } }
 
 .Remeras {
   grid-area: remeras;
   display: flex;
   justify-content: space-between; }
-  .Remeras:hover img {
-    animation: slide-derecha 1s ease 0s 1 normal forwards;
-    -webkit-animation: slide-derecha 1s ease 0s 1 normal forwards; }
-  .Remeras img {
-    animation: slide-izquierda 1s ease 0s 1 normal forwards;
-    -webkit-animation: slide-izquierda 1s ease 0s 1 normal forwards; }
+  @media screen and (min-width: 900px) {
+    .Remeras:hover img {
+      animation: slide-derecha 1s ease 0s 1 normal forwards;
+      -webkit-animation: slide-derecha 1s ease 0s 1 normal forwards; } }
+  @media screen and (min-width: 900px) {
+    .Remeras img {
+      animation: slide-izquierda 1s ease 0s 1 normal forwards;
+      -webkit-animation: slide-izquierda 1s ease 0s 1 normal forwards; } }
   @media screen and (max-width: 900px) {
     .Remeras {
       display: flex;
-      flex-direction: column;
-      animation: none;
-      -webkit-animation: none; } }
+      flex-direction: column; } }
 
 .Shorts {
   grid-area: shorts;
   display: flex;
   justify-content: space-between; }
-  .Shorts:hover img {
-    animation: slide-derecha 1s ease 0s 1 normal forwards;
-    -webkit-animation: slide-derecha 1s ease 0s 1 normal forwards; }
-  .Shorts img {
-    animation: slide-izquierda 1s ease 0s 1 normal forwards;
-    -webkit-animation: slide-izquierda 1s ease 0s 1 normal forwards; }
+  @media screen and (min-width: 900px) {
+    .Shorts:hover img {
+      animation: slide-derecha 1s ease 0s 1 normal forwards;
+      -webkit-animation: slide-derecha 1s ease 0s 1 normal forwards; } }
+  @media screen and (min-width: 900px) {
+    .Shorts img {
+      animation: slide-izquierda 1s ease 0s 1 normal forwards;
+      -webkit-animation: slide-izquierda 1s ease 0s 1 normal forwards; } }
   @media screen and (max-width: 900px) {
     .Shorts {
       display: flex;
-      flex-direction: column;
-      animation: none;
-      -webkit-animation: none; } }
+      flex-direction: column; } }
 
 .Joggers {
   grid-area: joggers;
   display: flex;
   justify-content: space-between; }
-  .Joggers:hover img {
-    animation: slide-derecha 1s ease 0s 1 normal forwards;
-    -webkit-animation: slide-derecha 1s ease 0s 1 normal forwards; }
-  .Joggers img {
-    animation: slide-izquierda 1s ease 0s 1 normal forwards;
-    -webkit-animation: slide-izquierda 1s ease 0s 1 normal forwards; }
+  @media screen and (min-width: 900px) {
+    .Joggers:hover img {
+      animation: slide-derecha 1s ease 0s 1 normal forwards;
+      -webkit-animation: slide-derecha 1s ease 0s 1 normal forwards; } }
+  @media screen and (min-width: 900px) {
+    .Joggers img {
+      animation: slide-izquierda 1s ease 0s 1 normal forwards;
+      -webkit-animation: slide-izquierda 1s ease 0s 1 normal forwards; } }
   @media screen and (max-width: 900px) {
     .Joggers {
       display: flex;
-      flex-direction: column;
-      animation: none;
-      -webkit-animation: none; } }
+      flex-direction: column; } }
 
 .Jeans {
   grid-area: jeans;
   display: flex;
   justify-content: space-between; }
-  .Jeans:hover img {
-    animation: slide-derecha 1s ease 0s 1 normal forwards;
-    -webkit-animation: slide-derecha 1s ease 0s 1 normal forwards; }
-  .Jeans img {
-    animation: slide-izquierda 1s ease 0s 1 normal forwards;
-    -webkit-animation: slide-izquierda 1s ease 0s 1 normal forwards; }
+  @media screen and (min-width: 900px) {
+    .Jeans:hover img {
+      animation: slide-derecha 1s ease 0s 1 normal forwards;
+      -webkit-animation: slide-derecha 1s ease 0s 1 normal forwards; } }
+  @media screen and (min-width: 900px) {
+    .Jeans img {
+      animation: slide-izquierda 1s ease 0s 1 normal forwards;
+      -webkit-animation: slide-izquierda 1s ease 0s 1 normal forwards; } }
   @media screen and (max-width: 900px) {
     .Jeans {
       display: flex;
-      flex-direction: column;
-      animation: none;
-      -webkit-animation: none; } }
+      flex-direction: column; } }
 
 .Accesorios {
   grid-area: accesorios;
   display: flex;
   justify-content: space-between; }
-  .Accesorios:hover img {
-    animation: slide-derecha 1s ease 0s 1 normal forwards;
-    -webkit-animation: slide-derecha 1s ease 0s 1 normal forwards; }
-  .Accesorios img {
-    animation: slide-izquierda 1s ease 0s 1 normal forwards;
-    -webkit-animation: slide-izquierda 1s ease 0s 1 normal forwards; }
+  @media screen and (min-width: 900px) {
+    .Accesorios:hover img {
+      animation: slide-derecha 1s ease 0s 1 normal forwards;
+      -webkit-animation: slide-derecha 1s ease 0s 1 normal forwards; } }
+  @media screen and (min-width: 900px) {
+    .Accesorios img {
+      animation: slide-izquierda 1s ease 0s 1 normal forwards;
+      -webkit-animation: slide-izquierda 1s ease 0s 1 normal forwards; } }
   @media screen and (max-width: 900px) {
     .Accesorios {
       display: flex;
-      flex-direction: column;
-      animation: none;
-      -webkit-animation: none; } }
+      flex-direction: column; } }
 
 .hoodies-left img,
 .remeras-left img,

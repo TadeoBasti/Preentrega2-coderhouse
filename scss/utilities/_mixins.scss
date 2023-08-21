@@ -42,3 +42,9 @@
         @content;
     }
 }
+
+@mixin minquery($ancho) {
+    @media screen and (min-width: #{$ancho}) {
+        @content;
+    }
+}
